@@ -1,13 +1,13 @@
-import { NavLeft, NavLeftUl } from "../styled/NavbarLeftStyled";
-const NavbarLeft = () => {
+import { NavLeft, NavLeftUl, NavLi } from "../styled/NavbarLeftStyled";
+const NavbarLeft = ({ Color }) => {
   return (
     <>
       <NavLeft>
         <NavLeftUl>
-          <li>About</li>
-          <li>Contact Us</li>
-          <li>Explore</li>
-          <li>Pricing</li>
+          <NavLi Color={Color}>About</NavLi>
+          <NavLi>Contact Us</NavLi>
+          <NavLi>Explore</NavLi>
+          <NavLi>Pricing</NavLi>
         </NavLeftUl>
       </NavLeft>
     </>

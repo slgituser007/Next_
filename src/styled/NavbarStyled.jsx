@@ -12,6 +12,7 @@ export const NavBarS = styled.nav`
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 2;
 `;
 
 export const NavUl = styled.ul`
@@ -37,5 +38,6 @@ export const LogoSec = styled(displayFlex)`
     font-size: 2.2em;
     font-weight: 500;
     color: #fff;
+    font-family: "MonoLisa";
   }
 `;

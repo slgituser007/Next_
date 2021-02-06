@@ -12,6 +12,8 @@ export const GlobalStyled = createGlobalStyle`
 body{
         height:100vh;
         width:100%;
+        position:relative;
+        overflow:hidden;
 }
 
 li{
@@ -22,4 +24,9 @@ export const displayFlex = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+`;
+
+export const MainSec = styled.div`
+  height: 100%;
+  width: 100%;
 `;
