@@ -1,7 +1,14 @@
 import Navbar from "./Navbar";
 import NavbarLeft from "./NavbarLeft";
-import { LayoutS, WaveS, MapS, HeadingS } from "../styled/LayoutStyled";
+import {
+  LayoutS,
+  WaveS,
+  MapS,
+  HeadingS,
+  HeadingH,
+} from "../styled/LayoutStyled";
 import Wave from "../assets/Wave";
+
 const Layout = ({ Heading, Color }) => {
   return (
     <>
@@ -10,10 +17,10 @@ const Layout = ({ Heading, Color }) => {
         <div>
           <NavbarLeft Color={Color} />
           <HeadingS>
-            <h1>{Heading ? Heading : "Loading"}</h1>
+            <HeadingH Color={Color}>{Heading ? Heading : "Loading"}</HeadingH>
           </HeadingS>
           <WaveS>
-            <Wave />
+            <Wave Color={Color} />
           </WaveS>
           <MapS>
             <img src="https://i.ibb.co/7bm5qYQ/Map.png" alt="Map" border="0" />

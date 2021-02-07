@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { displayFlex } from "./GlobalStyled";
+import { motion } from "framer-motion";
 
 export const LayoutS = styled.section`
   height: 100%;
@@ -38,10 +39,22 @@ export const HeadingS = styled(displayFlex)`
   width: 100%;
   position: absolute;
   pointer-events: none;
-  h1 {
-    font-size: 30em;
-    font-weight: 700;
-    color: #fff;
-    margin-top: 0.5em;
-  }
+`;
+
+export const HeadingH = styled.h1`
+  font-size: 30em;
+  font-weight: 700;
+  color: #fff;
+  text-transform: capitalize;
+  margin-top: 0.5em;
+  padding-left: 0.6em;
+  white-space: nowrap;
+  transform: translateY(-0.14em);
+  background: -webkit-linear-gradient(
+    #ffffff,
+    ${(props) => props.Color || "blue"}
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 `;

@@ -1,4 +1,4 @@
-const Wave = () => {
+const Wave = ({ Color }) => {
   return (
     <>
       <svg
@@ -12,7 +12,7 @@ const Wave = () => {
           fillRule="evenodd"
           clipRule="evenodd"
           d="M1920 360L0 1080V0L1920 0V360Z"
-          fill="#0099FF"
+          fill={Color ? Color : "blue"}
         />
       </svg>
     </>

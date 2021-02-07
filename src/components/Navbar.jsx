@@ -1,11 +1,14 @@
 import { NavBarS, NavUl, LogoSec } from "../styled/NavbarStyled";
+import Link from "next/link";
 
 const Navbar = () => {
   return (
     <>
       <NavBarS>
         <LogoSec>
-          <h1>Next_</h1>
+          <Link href="/">
+            <h1>Next_</h1>
+          </Link>
         </LogoSec>
         <NavUl>
           <li>

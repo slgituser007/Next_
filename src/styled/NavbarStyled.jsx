@@ -33,11 +33,15 @@ export const NavUl = styled.ul`
 export const LogoSec = styled(displayFlex)`
   flex: 1;
   justify-content: flex-start;
-
   h1 {
     font-size: 2.2em;
     font-weight: 500;
     color: #fff;
     font-family: "MonoLisa";
+    cursor: pointer;
+    transition: 0.1s;
+    &:hover {
+      font-size: 2.3em;
+    }
   }
 `;
